@@ -1,0 +1,109 @@
+@charset "utf-8";
+/*
+CIS 155 Project
+Author: Ian Lorimer
+Date: 05.01.2020
+Filename: styles.css
+*/
+/*
+Main structural styles
+*/
+html{
+    background-color: hsl(60, 84%, 82%);
+    font-family: cursive;
+}
+body{
+	color: rgb(91, 91, 91);
+	background-color: hsl(60, 84%, 82%);
+}
+/*Heading Styles*/
+/*
+M2LO13 Demonstrate how CSS can change presentation of textual elements (CSS, these are styles that impact text that is rendered on the page)
+*/
+header h1{
+	color: white;
+	background-color: crimson;
+}
+h1{
+	color: white;
+	background-color: black;
+	text-align: center;
+	font-size: 2.2em;
+}
+/*
+M2LO15 Apply colors using CSS (CSS, see 2-5 Working with Color in CSS)
+*/
+h2{
+	color: black;
+	font-size: 1.5em;
+}
+aside{
+	text-align: right;
+}
+/*
+M2LO12 Demonstrate how CSS can change presentation of page elements (CSS, these are styles that impact page elements rather than impacting text on the page)
+*/
+.center{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+}
+/*
+M2LO5 Demonstrate contextual selectors (CSS, specify 2 times, showing two different types of contextual selectors as shown in Figure 2-12, Contextual Selectors, of the textbook)
+*/
+dt{
+	color: black;
+}
+/*
+M2LO5 Demonstrate contextual selectors (CSS, specify 2 times, showing two different types of contextual selectors as shown in Figure 2-12, Contextual Selectors, of the textbook)
+*/
+aside blockquote{
+	color: rgb(0, 0, 255);
+}
+/*
+M2LO3 Demonstrate style precedence and inheritance in CSS (CSS, this item should be specified 2 times, once where precedence is applied and once where inheritance is applied; see 2-3d Style Specificity and Precedence, and 2-3e Style Inheritance)
+*/
+nav > ul{
+	line-height: 2em;
+	display: table-row;
+}
+/*
+M2LO3 Demonstrate style precedence and inheritance in CSS (CSS, this item should be specified 2 times, once where precedence is applied and once where inheritance is applied; see 2-3d Style Specificity and Precedence, and 2-3e Style Inheritance)
+*/
+nav > ul > li{
+	display: table-cell;
+	text-align: center;
+}
+/*
+M2LO7 Demonstrate a CSS attribute selector other than class or id (CSS, specify 1 time, see 2-9b Attribute selectors)
+*/
+[href] {
+	font-size: 20px;
+}
+nav{
+	display: table;
+	width: 100%;
+}
+/*
+M2LO6  Demonstrate a CSS id and a CSS class selector (CSS, specify 2 times, show a use of id and a use of class, see 2-9b Attribute selectors)
+*/
+#leftsection article{
+	font-size: 22px;
+}
+#rightsection blockquote{
+	font-size: large;
+}
+/*
+M2LO11 Demonstrate a pseudo-classes and a pseudo-element selector (CSS, specify 2 times, show one pseudo-class and one pseudo-element, see 2-18 Using Pseudo-Classes and Pseudo-Elements)
+*/
+article p::first-letter{
+	font-family: cursive;
+	font-size: 250%;
+}
+/*
+M2LO14 Demonstrate and explain the use of progressive enhancement in CSS (CSS, see 2-6 Employing Progressive Enhancement)
+*/
+/*
+Progressive Enhancement is starting with a good foundation and adding enhancements. Clean code and CSS are the beginning layers. I am trying to add the simple things first and the bells and whistles as we learn them.
+*/
