@@ -107,3 +107,6 @@ M2LO14 Demonstrate and explain the use of progressive enhancement in CSS (CSS, s
 /*
 Progressive Enhancement is starting with a good foundation and adding enhancements. Clean code and CSS are the beginning layers. I am trying to add the simple things first and the bells and whistles as we learn them.
 */
+dt{
+	font-size: large;
+}
