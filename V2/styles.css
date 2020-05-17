@@ -1,0 +1,275 @@
+@charset "utf-8";
+/*
+CIS 155 Project
+Author: Ian Lorimer
+Date: 05.01.2020
+Filename: styles.css
+*/
+/*
+Main structural styles
+*/
+html{
+    background-color: rgb(0, 0, 0);
+    font-family: 'Tattoo Sailor', sans-serif;
+}
+body{
+	margin-left: auto;
+	margin-right: auto;
+	width: 95%;
+	color: black;
+	background-color: white;
+}
+/*Heading Styles*/
+/*
+M2LO13 Demonstrate how CSS can change presentation of textual elements (CSS, these are styles that impact text that is rendered on the page)
+*/
+header{
+	background-color: black;
+}
+h1{
+	text-indent: 25%;
+	line-height: 0.1em;
+	color: white;
+	background-color: black;
+	text-align: left;
+	font-size: 6em;
+}
+/*
+M2LO15 Apply colors using CSS (CSS, see 2-5 Working with Color in CSS)
+*/
+h2{
+	background-color: black;
+	line-height: 0.1em;
+	text-indent: 50%;
+	color: white;
+	font-size: 6em;
+}
+img{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+}
+/*
+M2LO12 Demonstrate how CSS can change presentation of page elements (CSS, these are styles that impact page elements rather than impacting text on the page)
+*/
+.center{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+}
+/*
+M2LO5 Demonstrate contextual selectors (CSS, specify 2 times, showing two different types of contextual selectors as shown in Figure 2-12, Contextual Selectors, of the textbook)
+*/
+dt{
+	font-size: large;
+}
+/*
+M2LO5 Demonstrate contextual selectors (CSS, specify 2 times, showing two different types of contextual selectors as shown in Figure 2-12, Contextual Selectors, of the textbook)
+*/
+aside blockquote{
+	color: white;
+}
+/*
+M2LO3 Demonstrate style precedence and inheritance in CSS (CSS, this item should be specified 2 times, once where precedence is applied and once where inheritance is applied; see 2-3d Style Specificity and Precedence, and 2-3e Style Inheritance)
+*/
+nav > ul{
+	display: table-row;
+}
+/*
+M2LO3 Demonstrate style precedence and inheritance in CSS (CSS, this item should be specified 2 times, once where precedence is applied and once where inheritance is applied; see 2-3d Style Specificity and Precedence, and 2-3e Style Inheritance)
+*/
+/*
+M4LO5 Demonstrate the use of text or box shadowing (CSS, note one of these two in your CSS and explain its impact on the HTML)
+Crated text shadows
+*/
+nav > ul > li{
+	display: table-cell;
+	text-align: center;
+	background-color: white;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	border: 4px double rgb(0, 0, 0);
+}
+/*
+M2LO7 Demonstrate a CSS attribute selector other than class or id (CSS, specify 1 time, see 2-9b Attribute selectors)
+*/
+[href] {
+	font-size: 20px;
+}
+nav{
+	display: table;
+	width: 100%;
+}
+/*
+M2LO6  Demonstrate a CSS id and a CSS class selector (CSS, specify 2 times, show a use of id and a use of class, see 2-9b Attribute selectors)
+*/
+#leftsection article{
+	font-size: 22px;
+}
+#rightsection blockquote{
+	font-size: large;
+}
+/*
+M2LO11 Demonstrate a pseudo-classes and a pseudo-element selector (CSS, specify 2 times, show one pseudo-class and one pseudo-element, see 2-18 Using Pseudo-Classes and Pseudo-Elements)
+*/
+article p::first-letter{
+	font-size: 250%;
+}
+/*
+M2LO14 Demonstrate and explain the use of progressive enhancement in CSS (CSS, see 2-6 Employing Progressive Enhancement)
+*/
+/*
+Progressive Enhancement is starting with a good foundation and adding enhancements. Clean code and CSS are the beginning layers. I am trying to add the simple things first and the bells and whistles as we learn them.
+*/
+h3{
+	font-size: 1.9em;
+	color: black;
+	margin-left: 15px;
+	margin-right: 15px;
+}
+/*
+This is the about page
+*/
+h4{
+	font-size: 3em;
+	background-color: white;
+	color: black;
+	background-image: url(IMG_0670_edited.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 100px 100px 300px 100px;
+}
+h5{
+	font-size: 3em;
+	color: black;
+	margin-left: 15px;
+	margin-right: 15px;
+	clear: left;
+}
+/*
+M3LO8B Demonstrate relative positioning (It positions the images on the links)
+*/
+.container{
+	position: relative;
+}
+.text-block{
+	bottom: 20px;
+	left: 20px;
+}
+p{
+	background-color: white;
+	color: black;
+	font-size: x-large;
+	text-align: justify;
+}
+/*
+M3LO2 Demonstrate floating elements on the about page. It floats the "about" information to the left, making room for the aside on the right.
+*/
+section{
+	float: left;
+	width: 60%;
+}
+/*
+M4LO3 Demonstrate the use of rounded corners for borders (CSS)
+*/
+aside{
+	float: right;
+	width: 35%;
+	margin: 0 1.5%;
+	border: 4px double rgb(45, 93, 62);
+	border-radius: 50px 50px;
+}
+blockquote{
+	text-align: left;
+}
+/*
+M3LO6 Demonstrate formatting a grid (CSS, note the CSS rules that do this and what their impact is on the HTML; this can be old div-class based grids, or new CSS3 grids)
+*/
+.grid-container{
+	display: grid;
+	justify-items: center;
+}
+.item1{
+	grid-column-start: 1;
+	grid-column-end: 1;
+}
+.item2{
+	grid-column-start: 2;
+	grid-column-end: 1;
+}
+.item3{
+	grid-column-start: 3;
+	grid-column-end: 1;
+}
+p2{
+	font-size: medium;
+}
+article{
+	font-size: small;
+}
+#html2{
+	background-color: white;
+	color: black;
+}
+#body2{
+    background-color: white;
+	color: black;
+}
+aside > blockquote{
+	background-color: white;
+	color: black;
+}
+/*
+Menu page styles
+*/
+/*
+M4LO4 Demonstrate the use of gradients (CSS)
+*/
+#body3{
+	background-color: rgb(230, 194, 170);
+	box-sizing: border-box;
+	width: 87%;
+	background-image: radial-gradient(rgb(230, 194, 170), white);
+}
+/*
+M4LO2 Demonstrate the use of background images (CSS)
+*/
+#html3{
+	background-image: url(menu_background.jpg);
+}
+dl{
+	margin-left: 15px;
+	margin-right: 15px;
+}
+figure{
+	float: right;
+	width: 25%;
+	text-align: center;
+	font-size: smaller;
+	text-indent: 0;
+	border: thin black solid;
+	padding: 0.5em;
+	/*
+	M3LO10 Demonstrate an overflow setting (It makes a scroll bar, but right now, there is no info to scroll.
+	*/
+	overflow: scroll;
+  }
+  figure img{
+	  float: right;
+	  display: block;
+	  /*
+	  M3LO11 Demonstrate -prefix- style browser extensions use in CSS (This reflects the image along the y-axis)
+	  */
+	  -webkit-transform: rotateY(180deg);
+	  width: 100%;
+  }
+figcaption{
+	font-size: smaller;
+}
+/*
+M3LO3 Demonstrate a clearing floats (This moves the footer to the left side, instead of lining it up under the aside)
+*/
+footer{
+	clear: left;
+}
