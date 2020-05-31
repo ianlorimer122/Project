@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html id="html4" lang="en">
+
+<head>
+    <!--Kilroy's Pizza
+            Author: Ian Lorimer
+            Date: 05.01.2020
+            Filename: bread_menu.html
+            -->
+    <meta charset="utf-8" />
+    <meta name="keywords" content="Pizza, Capitol Hill, Food" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kilroy's Pizza</title>
+    <link href="styles.css" rel="stylesheet" />
+    <link href="https://fonts.cdnfonts.com/css/tattoo-sailor" rel="stylesheet">
+    <!--M1LO8 Demonstrate the use of external style sheets (HTML, note the external style sheet must exist and contain CSS)-->
+</head>
+
+<body id="body4">
+    <header>
+        <!--M1LO9 Demonstrate the use of inline images (HTML)-->
+        <!--An image contained within a program-->
+        <!--M2LO4 Demonstrate external, embedded, and inline styles (HTML, this item should be specified 2 times, once each for embedded and inline styles; note external was taken care of with M1LO8; see 2-3b Embedded Style Sheets, and 2-3c Inline Styles)-->
+        <!--This is an inline style-->
+        <nav>
+            <!--M1LO12 Create navigation using unordered lists (HTML)-->
+            <!--The <ul> tag is used to create a list of related items in no particular order.-->
+            <!--M1LO13 Demonstrate using 3 types of hyperlinks: site navigation, targeted location using ids, and external (HTML, this item should be specified 3 times, once on each type of link)-->
+            <!--This is an example of navigation.-->
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+                <li class="dropdown">
+                    <button class="dropbtn">Menu
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="pizza_menu.html">Pizza Menu</a>
+                        <a href="bread_menu.html">Bread Menu</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <h5>Bread Menu</h5>
+    <dl>
+        <dt>*Bread availability will change daily depending on time and demand, thank you!</dt>
+        <dt>Baguettes</dt>
+        <dd>1 for $4 or 6 for $20</dd>
+
+        <dt>Small Loaves</dt>
+        <dd>1 for $7 or 2 for $12</dd>
+
+        <dt>Batards</dt>
+        <dd>1 for $10</dd>
+
+        <dt>Boules</dt>
+        <dd>1 for $7 or 2 for $12</dd>
+
+        <dt>Foccacia</dt>
+        <dd>Plain- E.V.O.O. and Salt for $13</dd>
+        <dd>Rosemary- E.V.O.O., Fresh Rosemary and Salt for $16</dd>
+        <dd>Tomato- E.V.O.O., Halved Cherry Tomatoes, Salt and Balsamic Glaze for $20</dd>
+    </dl>
+    <img id="img2" src="baguette.jpg" alt="baguette" style="float: left; width: 350px; height: 350px;">
+    <img id="img3" src="placeholder.jpg" alt="boules" style="float: right; width: 350px; height: 350px;">
+    <a href="pizza_menu.html">View our complete Pizza Menu</a>
+    <br />
+    <br />
+    <br />
+    <main>
+        <table>
+            <caption>
+                Pizza Menu At-A-Glance
+            </caption>
+            <tr>
+                <th>Pizza</th>
+                <th>Small Pan</th>
+                <th>Large Pan</th>
+                <th>N.Y.</th>
+            </tr>
+            <tr>
+                <td>Pomodoro</td>
+                <td>$13</td>
+                <td>$28</td>
+                <td>$18</td>
+            </tr>
+            <tr>
+                <td>Margarita</td>
+                <td>$13</td>
+                <td>$28</td>
+                <td>$18</td>
+            </tr>
+            <tr>
+                <td>Pepperoni</td>
+                <td>$17</td>
+                <td>$32</td>
+                <td>$22</td>
+            </tr>
+            <tr>
+                <td>Patata</td>
+                <td>$15</td>
+                <td>$30</td>
+                <td>$20</td>
+            </tr>
+            <tr>
+                <td>The Cure</td>
+                <td>$25</td>
+                <td>$35</td>
+                <td>$26</td>
+            </tr>
+            <tr>
+                <td>Serano Squared</td>
+                <td>$25</td>
+                <td>$35</td>
+                <td>---</td>
+            </tr>
+            <tr>
+                <!--M6LO4 Demonstrate how to span multiple rows or multiple columns in a table (HTML, document where you write HTML that causes a multi-row or multi-column span; say which one it is as well: row or column, or both)
+                This is just a demonstration, it doesn't really add anything to the table.-->
+                <td colspan="4">I believe in pizza!</td>
+            </tr>
+        </table>
+    </main>
+</body>
+<!--M6LO3 Demonstrate how to create a table (HTML, explain table's purpose; it needs to be appropriate data for a table, and have at least 2 columns and 3 rows, appropriate use of thead/tbody/tfooter, and cells using th/td appropriately)
+The menu isn't great tabular data, but it serves to put all pizza choices in a quick look.-->
+
+</html>
