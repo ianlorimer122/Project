@@ -1,0 +1,52 @@
+<table>
+            <caption>
+                Pizza Menu At-A-Glance
+            </caption>
+            <tr>
+                <th>Pizza</th>
+                <th>Small Pan</th>
+                <th>Large Pan</th>
+                <th>N.Y.</th>
+            </tr>
+            <tr>
+                <td>Pomodoro</td>
+                <td>$13</td>
+                <td>$28</td>
+                <td>$18</td>
+            </tr>
+            <tr>
+                <td>Margarita</td>
+                <td>$13</td>
+                <td>$28</td>
+                <td>$18</td>
+            </tr>
+            <tr>
+                <td>Pepperoni</td>
+                <td>$17</td>
+                <td>$32</td>
+                <td>$22</td>
+            </tr>
+            <tr>
+                <td>Patata</td>
+                <td>$15</td>
+                <td>$30</td>
+                <td>$20</td>
+            </tr>
+            <tr>
+                <td>The Cure</td>
+                <td>$25</td>
+                <td>$35</td>
+                <td>$26</td>
+            </tr>
+            <tr>
+                <td>Serano Squared</td>
+                <td>$25</td>
+                <td>$35</td>
+                <td>---</td>
+            </tr>
+            <tr>
+                <!--M6LO4 Demonstrate how to span multiple rows or multiple columns in a table (HTML, document where you write HTML that causes a multi-row or multi-column span; say which one it is as well: row or column, or both)
+                This is just a demonstration, it doesn't really add anything to the table.-->
+                <td colspan="4">I believe in pizza!</td>
+            </tr>
+        </table>

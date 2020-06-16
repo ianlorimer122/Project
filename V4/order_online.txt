@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html id="html5">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="keywords" content="Pizza, Capitol Hill, Food" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kilroy's Pizza</title>
+    <link href="styles.css" rel="stylesheet" />
+    <link href="https://fonts.cdnfonts.com/css/tattoo-sailor" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+                <li class="dropdown">
+                    <button class="dropbtn">Menu
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="pizza_menu.html">Pizza Menu</a>
+                        <a href="bread_menu.html">Bread Menu</a>
+                    </div>
+                </li>
+                <li><a href="order_online.html">Order Online
+                        <div class="container">
+                            <div class="text-block">
+                                <div class="text-block">
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <article id="article2">
+        <br />
+        How to order:
+        <br />
+        Call us at <strong>555-555-1234</strong>, or order online
+    </article>
+    <br />
+    <header id="h7">
+        Order Online
+    </header>
+    <form>
+        <div>
+            <label for="yname">Your Name</label>
+            <input type="text" id="yname" name="name" placeholder="Your name">
+        </div>
+        <div>
+            <label for="phone">Your Phone Number</label>
+            <input type="tel" id="phone" placeholder="555-555-1234" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+        </div>
+        <br />
+        <br />
+    </form>
+</body>
+
+</html>

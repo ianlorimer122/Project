@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html id="html5" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="keywords" content="Pizza, Capitol Hill, Food" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kilroy's Pizza</title>
+    <link href="styles.css" rel="stylesheet" />
+    <link href="https://fonts.cdnfonts.com/css/tattoo-sailor" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+                <li class="dropdown">
+                    <button class="dropbtn">Menu
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="pizza_menu.html">Pizza Menu</a>
+                        <a href="bread_menu.html">Bread Menu</a>
+                    </div>
+                </li>
+                <li><a href="order_online.html">Order Online
+                        <div class="container">
+                            <div class="text-block">
+                                <div class="text-block">
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <article id="article2">
+        <br />
+        How to order:
+        <br />
+        Call us at <strong>555-555-1234</strong>, or order online
+    </article>
+    <br />
+    <table id="table2">
+        <caption id="caption2">
+            Pizza Menu At-A-Glance
+        </caption>
+        <tr>
+            <th>Pizza</th>
+            <th>Small Pan</th>
+            <th>Large Pan</th>
+            <th>N.Y.</th>
+        </tr>
+        <tr>
+            <td>Pomodoro</td>
+            <td>$13</td>
+            <td>$28</td>
+            <td>$18</td>
+        </tr>
+        <tr>
+            <td>Margarita</td>
+            <td>$13</td>
+            <td>$28</td>
+            <td>$18</td>
+        </tr>
+        <tr>
+            <td>Pepperoni</td>
+            <td>$17</td>
+            <td>$32</td>
+            <td>$22</td>
+        </tr>
+        <tr>
+            <td>Patata</td>
+            <td>$15</td>
+            <td>$30</td>
+            <td>$20</td>
+        </tr>
+        <tr>
+            <td>The Cure</td>
+            <td>$25</td>
+            <td>$35</td>
+            <td>$26</td>
+        </tr>
+        <tr>
+            <td>Serano Squared</td>
+            <td>$25</td>
+            <td>$35</td>
+            <td>---</td>
+        </tr>
+    </table>
+    <form id="order" action="http://www.example.com/pizza/order/" method="post">
+        <div style="text-align: center;">
+            <label for="yname">Your Name</label>
+            <!--M7LO5 Demonstrate the use of a text box in a form-->
+            <input type="text" id="yname" name="name" placeholder="Your name">
+            <br />
+            <br />
+            <label for="phone">Your Phone Number</label>
+            <input type="tel" id="phone" placeholder="555-555-1234" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+        </div>
+        <br />
+        <table>
+            <caption>
+                Choose Your Pizzas
+            </caption>
+            <tr>
+                <th>Pizza</th>
+                <th>Quantity</th>
+                <th>Total</th>
+            </tr>
+            <tr>
+                <td>
+                    <label>Choose a Pizza</label>
+                    <!--M7LO8 Demonstrate the use of a selection list in a form-->
+                    <select id="Pizza" name="pizza">
+                        <option value="Pomodoro">Pomodoro Large Pan - $28</option>
+                        <option value="Pomodoro">Pomodoro Small Pan - $18</option>
+                        <option value="Pomodoro">Pomodoro N.Y - $13</option>
+                        <option value="Margarita">Margarita Large Pan - $28</option>
+                        <option value="Margarita">Margarita Small Pan - $18</option>
+                        <option value="Margarita">Margarita N.Y - $13</option>
+                        <option value="Pepperoni">Pepperoni Large Pan - $17</option>
+                        <option value="Pepperoni">Pepperoni Small Pan - $21</option>
+                        <option value="Pepperoni">Pepperoni N.Y - $32</option>
+                        <option value="Patata">Patata Large Pan - $20</option>
+                        <option value="Patata">Patata Small Pan - $15</option>
+                        <option value="Patata">Patata N.Y - $30</option>
+                        <option value="The Cure">The Cure Large Pan - $26</option>
+                        <option value="The Cure">The Cure Small Pan - $25</option>
+                        <option value="The Cure">The Cure N.Y - $35</option>
+                        <option value="Serano Squared">Serano Squared Large Pan - $25</option>
+                        <option value="The Cure">Serano Squared Small Pan - $35</option>
+                    </select>
+                </td>
+                <td>
+                    <label for="Quantity">Quantity</label>
+                    <select id="Quantity" name="quantity">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select>
+                </td>
+                <td>
+                    <input type="text">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <strong>Get another pizza?</strong>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Choose a Pizza</label>
+                    <select name="pizza">
+                        <option value="Pomodoro">Pomodoro Large Pan - $28</option>
+                        <option value="Pomodoro">Pomodoro Small Pan - $18</option>
+                        <option value="Pomodoro">Pomodoro N.Y - $13</option>
+                        <option value="Margarita">Margarita Large Pan - $28</option>
+                        <option value="Margarita">Margarita Small Pan - $18</option>
+                        <option value="Margarita">Margarita N.Y - $13</option>
+                        <option value="Pepperoni">Pepperoni Large Pan - $17</option>
+                        <option value="Pepperoni">Pepperoni Small Pan - $21</option>
+                        <option value="Pepperoni">Pepperoni N.Y - $32</option>
+                        <option value="Patata">Patata Large Pan - $20</option>
+                        <option value="Patata">Patata Small Pan - $15</option>
+                        <option value="Patata">Patata N.Y - $30</option>
+                        <option value="The Cure">The Cure Large Pan - $26</option>
+                        <option value="The Cure">The Cure Small Pan - $25</option>
+                        <option value="The Cure">The Cure N.Y - $35</option>
+                        <option value="Serano Squared">Serano Squared Large Pan - $25</option>
+                        <option value="The Cure">Serano Squared Small Pan - $35</option>
+                    </select>
+                </td>
+                <td>
+                    <label for="Quantity">Quantity</label>
+                    <select name="quantity">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select>
+                </td>
+                <td>
+                    <input type="text">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <strong>Get another pizza?</strong>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Choose a Pizza</label>
+                    <select name="pizza">
+                        <option value="Pomodoro">Pomodoro Large Pan - $28</option>
+                        <option value="Pomodoro">Pomodoro Small Pan - $18</option>
+                        <option value="Pomodoro">Pomodoro N.Y - $13</option>
+                        <option value="Margarita">Margarita Large Pan - $28</option>
+                        <option value="Margarita">Margarita Small Pan - $18</option>
+                        <option value="Margarita">Margarita N.Y - $13</option>
+                        <option value="Pepperoni">Pepperoni Large Pan - $17</option>
+                        <option value="Pepperoni">Pepperoni Small Pan - $21</option>
+                        <option value="Pepperoni">Pepperoni N.Y - $32</option>
+                        <option value="Patata">Patata Large Pan - $20</option>
+                        <option value="Patata">Patata Small Pan - $15</option>
+                        <option value="Patata">Patata N.Y - $30</option>
+                        <option value="The Cure">The Cure Large Pan - $26</option>
+                        <option value="The Cure">The Cure Small Pan - $25</option>
+                        <option value="The Cure">The Cure N.Y - $35</option>
+                        <option value="Serano Squared">Serano Squared Large Pan - $25</option>
+                        <option value="The Cure">Serano Squared Small Pan - $35</option>
+                    </select>
+                </td>
+                <td>
+                    <label for="Quantity">Quantity</label>
+                    <select name="quantity">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select>
+                </td>
+                <td>
+                    <input type="text">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <strong>Get another pizza?</strong>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Choose a Pizza</label>
+                    <select name="pizza">
+                        <option value="Pomodoro">Pomodoro Large Pan - $28</option>
+                        <option value="Pomodoro">Pomodoro Small Pan - $18</option>
+                        <option value="Pomodoro">Pomodoro N.Y - $13</option>
+                        <option value="Margarita">Margarita Large Pan - $28</option>
+                        <option value="Margarita">Margarita Small Pan - $18</option>
+                        <option value="Margarita">Margarita N.Y - $13</option>
+                        <option value="Pepperoni">Pepperoni Large Pan - $17</option>
+                        <option value="Pepperoni">Pepperoni Small Pan - $21</option>
+                        <option value="Pepperoni">Pepperoni N.Y - $32</option>
+                        <option value="Patata">Patata Large Pan - $20</option>
+                        <option value="Patata">Patata Small Pan - $15</option>
+                        <option value="Patata">Patata N.Y - $30</option>
+                        <option value="The Cure">The Cure Large Pan - $26</option>
+                        <option value="The Cure">The Cure Small Pan - $25</option>
+                        <option value="The Cure">The Cure N.Y - $35</option>
+                        <option value="Serano Squared">Serano Squared Large Pan - $25</option>
+                        <option value="The Cure">Serano Squared Small Pan - $35</option>
+                    </select>
+                </td>
+                <td>
+                    <label for="Quantity">Quantity</label>
+                    <select name="quantity">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select>
+                </td>
+                <td>
+                    <input type="text">
+                </td>
+            </tr>
+            <tr>
+                <!--M6LO4 Demonstrate how to span multiple rows or multiple columns in a table (HTML, document where you write HTML that causes a multi-row or multi-column span; say which one it is as well: row or column, or both)
+            This is just a demonstration, it doesn't really add anything to the table.-->
+                <td colspan="2">Subtotal</td>
+                <td><input type="number" step="0.01"></td>
+            </tr>
+            <tr>
+                <td colspan="2">Tax</td>
+                <td><input type="number" step="0.01"></td>
+            </tr>
+            <tr>
+                <td colspan="2">Grand Total</td>
+                <td><input type="number" step="0.01"></td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <button id="button2" type="button">Order My Pizza</button>
+                </td>
+            </tr>
+        </table>
+        <!--M7LO10 Demonstrate the use of a submit button in a form-->
+    </form>
+    <img id="img3" src="dough.jpg" alt="dough">
+</body>
+
+</html>

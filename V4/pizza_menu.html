@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html id="html3" lang="en">
+
+<head>
+    <!--Kilroy's Pizza
+            Author: Ian Lorimer
+            Date: 05.01.2020
+            Filename: pizza_menu.html
+    -->
+    <meta charset="utf-8" />
+    <meta name="keywords" content="Pizza, Capitol Hill, Food" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.cdnfonts.com/css/tattoo-sailor" rel="stylesheet">
+    <title>Kilroy's Pizza</title>
+    <!--M1LO8 Demonstrate the use of external style sheets (HTML, note the external style sheet must exist and contain CSS)-->
+    <link href="styles.css" rel="stylesheet" />
+</head>
+
+<body id="body3">
+    <header>
+        <!--M1LO9 Demonstrate the use of inline images (HTML)-->
+        <!--An image contained within a program-->
+        <!--M2LO4 Demonstrate external, embedded, and inline styles (HTML, this item should be specified 2 times, once each for embedded and inline styles; note external was taken care of with M1LO8; see 2-3b Embedded Style Sheets, and 2-3c Inline Styles)-->
+        <!--This is an inline style-->
+        <nav>
+            <!--M1LO12 Create navigation using unordered lists (HTML)-->
+            <!--The <ul> tag is used to create a list of related items in no particular order.-->
+            <!--M1LO13 Demonstrate using 3 types of hyperlinks: site navigation, targeted location using ids, and external (HTML, this item should be specified 3 times, once on each type of link)-->
+            <!--This is an example of navigation.-->
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+                <li class="dropdown">
+                    <button class="dropbtn">Menu
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="pizza_menu.html">Pizza Menu</a>
+                        <a href="bread_menu.html">Bread Menu</a>
+                    </div>
+                </li>
+                <li><a href="order_online.html">Order Online
+                        <div class="container">
+                            <div class="text-block">
+                                <div class="text-block">
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h5>Pizza Menu</h5>
+        <!--M4LO1 Demonstrate the use of figure boxes (HTML)-->
+        <figure>
+            <p><img src="IMG_2727_edited.jpg" alt="Pizza slice">
+            <figcaption>Kilroy's Signature Pizza</figcaption>
+        </figure>
+        <h3 id="Classic">Classic Pizzas</h3>
+        <dl>
+            <dt>Pomodoro Pizza</dt>
+            <dd>Pomodoro Sauce & Shaved Garlic. Finished with Fresh Basil, and E.V.O.O.
+                N.Y.-$18 Small Pan-$13 Large Pan-$28</dd>
+            <dt>Margarita Pizza</dt>
+            <dd>Pomodoro Sauce, Shaved Garlic, & Mozzarella Cheese Blend. Finished with Fresh Basil, and E.V.O.O.
+                N.Y.-$18 Small Pan-$13 Large Pan-$28</dd>
+            <dt>Pepperoni Pizza</dt>
+            <dd>Pomodoro Sauce, Signature Pepperoni & Mozzarella Cheese Blend. Finished with Fresh Basil.
+                N.Y.-$22 Small Pan-$17 Large Pan-$32</dd>
+        </dl>
+        <h3 id="Signature">Signature Pizzas</h3>
+        <dl>
+            <dt>Patata</dt>
+            <dd>Pesto Sauce, Roasted Potatoes & Mozzarella Cheese Blend.
+                N.Y.-$20 Small Pan-$15 Large Pan-$30</dd>
+            <dt>The Cure</dt>
+            <dd>E.V.O.O., Signature Bacon, Mozzarella Cheese Blend, & Ricotta Cheese. Finished with Calabrian Chili’s
+                N.Y.-$26 Small Pan-$25 Large Pan-$35</dd>
+            <dt>Serrano Squared*</dt>
+            <dd>Pomodoro Sauce, Signature Pepperoni, Pickled Serranos, & Mozzarella Cheese Blend. Finished with Serrano
+                Ham
+                and Fresh Arugula.
+                Small Pan-$25 Large Pan-$35</dd>
+            <dt>* Only available as a pan pizza.</dt>
+            <dd>Rotating Slices Available All Day!</dd>
+        </dl>
+        <!--M1LO13 Demonstrate using 3 types of hyperlinks: site navigation, targeted location using ids, and external (HTML, this item should be specified 3 times, once on each type of link)-->
+        <!--This is a location-->
+        <!--This is a targeted location using ids.-->
+        <a href="bread_menu.html">View our Bread Menu</a>
+    </section>
+    <footer>
+        <section id="section2">
+            <div class="slide">
+                <div class="content">
+                    <h6>Serrano Squared</h6>
+                    <p>Pomodoro Sauce, Signature Pepperoni, Pickled Serranos, & Mozzarella Cheese Blend. Finished with
+                        Serrano
+                        Ham and Fresh Arugula.</p>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="content">
+                    <h6>Margarita Pizza</h6>
+                    <p>Pomodoro Sauce, Shaved Garlic, & Mozzarella Cheese Blend. Finished with Fresh Basil, and
+                        E.V.O.O.</p>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="content">
+                    <h6>Patata</h6>
+                    <p>Pesto Sauce, Roasted Potatoes & Mozzarella Cheese Blend.</p>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="content">
+                    <h6>Pepperoni Pizza</h6>
+                    <p>Pomodoro Sauce, Signature Pepperoni & Mozzarella Cheese Blend. Finished with Fresh Basil.</p>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="content">
+                    <h6>Serrano Squared</h6>
+                    <p>Pomodoro Sauce, Signature Pepperoni, Pickled Serranos, & Mozzarella Cheese Blend. Finished with
+                        Serrano
+                        Ham and Fresh Arugula.</p>
+                </div>
+            </div>
+        </section>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,91 @@
+<form>
+            <div>
+                <label for="yname">Your Name</label>
+                <input type="text" id="yname" name="name" placeholder="Your name">
+            </div>
+            <div>
+                <label for="phone">Your Phone Number</label>
+                <input type="tel" id="phone" placeholder="555-555-1234" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+            </div>
+            <br />
+            <br />
+            <div>
+                <caption>Choose Your Pizzas</caption><br />
+                <input type="checkbox">Pomodoro
+                <div>
+                    &emsp;<label for="style">Style</label>
+                    <input type="number" name="style">N.Y. ($18)
+                    <input type="number" name="style">Small Pan ($13)
+                    <input type="number" name="style">Large Pan ($28)
+                    <div>
+                        &emsp;<label for="Quantity">How Many</label>
+                        <input type="number" min="0" size="6">
+                        <br />
+                    </div>
+                </div>
+                <br />
+                <input type="checkbox">Margarita
+                <div>
+                    &emsp;<label for="style">Style</label>
+                    <input type="number" name="style1">N.Y. ($18)
+                    <input type="number" name="style1">Small Pan ($13)
+                    <input type="number" name="style1">Large Pan ($28)
+                    <div>
+                        &emsp;<label for="Quantity">How Many</label>
+                        <input type="number" min="0" size="6">
+                        <br />
+                    </div>
+                </div>
+                <br />
+                <input type="checkbox">Pepperoni
+                <div>
+                    &emsp;<label for="style">Style</label>
+                    <input type="number" name="style2">N.Y. ($22)
+                    <input type="number" name="style2">Small Pan ($17)
+                    <input type="number" name="style2">Large Pan ($32)
+                    <div>
+                        &emsp;<label for="Quantity">How Many</label>
+                        <input type="number" min="0" size="6">
+                        <br />
+                    </div>
+                </div>
+                <br />
+                <input type="checkbox">Patata
+                <div>
+                    &emsp;<label for="style">Style</label>
+                    <input type="number" name="style3">N.Y. ($20)
+                    <input type="number" name="style3">Small Pan ($15)
+                    <input type="number" name="style3">Large Pan ($30)
+                    <div>
+                        &emsp;<label for="Quantity">How Many</label>
+                        <input type="number" min="0" size="6">
+                        <br />
+                    </div>
+                </div>
+                <br />
+                <input type="checkbox">The Cure
+                <div>
+                    &emsp;<label for="style">Style</label>
+                    <input type="radio" name="style4">N.Y. ($26)
+                    <input type="radio" name="style4">Small Pan ($25)
+                    <input type="radio" name="style4">Large Pan ($35)
+                    <div>
+                        &emsp;<label for="Quantity">How Many</label>
+                        <input type="number" min="0" size="6">
+                        <br />
+                    </div>
+                </div>
+                <br />
+                <input type="checkbox">Serano Squared
+                <div>
+                    &emsp;<label for="style">Style</label>
+                    <input type="radio" name="style5">Small Pan ($25)
+                    <input type="radio" name="style5">Large Pan ($35)
+                    <div>
+                        &emsp;<label for="Quantity">How Many</label>
+                        <input type="number" min="0" size="6">
+                        <br />
+                    </div>
+                </div>
+            </div>
+        </form>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<!--M1LO6 Demonstrate the use of basic HTML tags to create a simple Web page (HTML, this item should be specified once, describing how the file it is in meets this outcome)-->
+<!--This seems self explanatory, the document type declaration indicates HTML is used and the HTML tag marks the beginning of the document.-->
+<html lang="en">
+
+<head>
+    <!--Kilroy's Pizza
+        Author: Ian Lorimer
+        Date: 04.30.2020
+        Filename: index.html
+        -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="Pizza, Capitol Hill, Food" />
+    <title>Kilroy's Pizza</title>
+    <link href="https://fonts.cdnfonts.com/css/tattoo-sailor" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet" />
+    <!--M1LO8 Demonstrate the use of external style sheets (HTML, note the external style sheet must exist and contain CSS)-->
+    <!--Link elements link the webpage to an external style sheet file-->
+    <!--M2LO4 Demonstrate external, embedded, and inline styles (HTML, this item should be specified 2 times, once each for embedded and inline styles; note external was taken care of with M1LO8; see 2-3b Embedded Style Sheets, and 2-3c Inline Styles)-->
+</head>
+
+<body>
+    <header>
+        <h1>Kilroy's</h1>
+        <h2>Pizza</h2>
+        <img src="Kilroys_pizza_image_4_edited.jpg" alt="Kilroy's Pizza">
+        <!--M1LO9 Demonstrate the use of inline images (HTML)-->
+        <!--An image contained within a program-->
+        <!--M2LO4 Demonstrate external, embedded, and inline styles (HTML, this item should be specified 2 times, once each for embedded and inline styles; note external was taken care of with M1LO8; see 2-3b Embedded Style Sheets, and 2-3c Inline Styles)-->
+        <!--This is an inline style-->
+        <nav>
+            <!--M1LO12 Create navigation using unordered lists (HTML)-->
+            <!--The <ul> tag is used to create a list of related items in no particular order.-->
+            <!--M1LO13 Demonstrate using 3 types of hyperlinks: site navigation, targeted location using ids, and external (HTML, this item should be specified 3 times, once on each type of link)-->
+            <!--This is an example of navigation.-->
+            <ul>
+                <li><a href="about.html">About
+                        <div class="container">
+                            <!--M3LO6 Demonstrate formatting a grid (CSS, note the CSS rules that do this and what their impact is on the HTML; this can be old div-class based grids, or new CSS3 grids)-->
+                            <div class="grid-container">
+                                <div class="text-block">
+                                    <img src="Untitled_Artwork.JPEG" alt="About" class="right">
+                                </div>
+                            </div>
+                        </div>
+                    </a></li>
+                <li><a href="pizza_menu.html">Pizza Menu
+                        <div class="container">
+                            <div class="grid-container">
+                                <div class="text-block">
+                                    <img src="pizza.JPG" alt="Pizza Menu" class="right">
+                                </div>
+                            </div>
+                        </div>
+                    </a></li>
+                <li><a href="bread_menu.html">Bread Menu
+                        <div class="container">
+                            <div class="grid-container">
+                                <div class="text-block">
+                                    <img src="bread.JPG" alt="Bread Menu" class="right">
+                                </div>
+                            </div>
+                        </div>
+                    </a></li>
+                <li><a href="order_online.html">Order Online
+                        <div class="container">
+                            <div class="grid-container">
+                                <div class="text-block">
+                                    <div class="text-block">
+                                        <img src="pickup.png" alt="Order Online" class="right">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a></li>
+            </ul>
+        </nav>
+        <!--M2LO6  Demonstrate a CSS id and a CSS class selector (CSS, specify 2 times, show a use of id and a use of class, see 2-9b Attribute selectors)-->
+    </header>
+    <footer>
+        <!--M1LO10 Demonstrate the use of special characters from extended character sets (HTML, use entities, not cut-and-pasted unicode characters)-->
+        <!--These characters put in a bullet and white space-->
+        Kilroy's Pizza &#8226; 1641 Nagle Place, Seattle WA, &nbsp; 98122
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+
+<html id="html2" lang="en">
+
+<head>
+        <!--Kilroy's Pizza
+            Author: Ian Lorimer
+            Date: 05.01.2020
+            Filename: about.html
+        -->
+        <meta charset="utf-8" />
+        <meta name="keywords" content="Pizza, Capitol Hill, Food" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Kilroy's Pizza</title>
+        <link href="styles.css" rel="stylesheet" />
+        <link href="https://fonts.cdnfonts.com/css/tattoo-sailor" rel="stylesheet">
+        <!--M1LO8 Demonstrate the use of external style sheets (HTML, note the external style sheet must exist and contain CSS)-->
+        <!--M2LO4 Demonstrate external, embedded, and inline styles (HTML, this item should be specified 2 times, once each for embedded and inline styles; note external was taken care of with M1LO8; see 2-3b Embedded Style Sheets, and 2-3c Inline Styles)-->
+</head>
+
+<body id="body2">
+        <!--The following paragraph is for the assignment and will not appear on actual webpage.-->
+        <p>Ian Lorimer<br />
+                CIS 155 Web Development I<br />
+                05.02.2020<br />
+                V1 All new content, Homepage with one image, links to about, pizza menu, and bread menu.
+                New content includes menus, information for the about page. Additional images and photos will be
+                added
+                in subsequent versions.
+                Fonts, text, and colors established.</p>
+        <p>
+                V2 Extensive changes made <br />
+                Home page - changed font, color, and layout, added grid and three images as links.
+                About Page - added background image, margins floated the aside, made borders with rounded corners. Added
+                text box shadowed links.
+                Pizza Menu - added background image, a second image in a figure box, a radial gradient and added links
+                Bread Menu - Added a link to the pizza menu, and the navbar to all pages. This page is still under
+                construction.
+        </p>
+        <p>
+                V3
+                On all the pages (excluding the homepage), I added a drop down menu for the pizza and bread menus.
+                Pizza Menu - I added a flexbox slideshow, edited an image, and played with the background image.
+                Bread Menu - Added images, added pizza menu at a glance (required table), added a border color and the
+                gradient.
+        </p>
+        <p>
+                V4
+                Based on Zoom classroom feedback, I changed to a monochromatic color scheme.
+                <br />
+                Home Page - I added an online order image and a link on the navbar on the about page.
+                I added a link to the order online, and added phone number to the (footer).
+                <br />
+                Pizza Menu - Took out color/gradient, added order online to the navbar flipped the colors on the slider description boxes from white on black to black on white.
+                <br />
+                Bread Menu - Took out color/gradient, added border changed from orange to gray. Added Kilroy image, moved the pizza menu at a glance to the online order page. Added another bread photo.
+                <br />
+                Order Online - Pizza Menu at a glance colors switched from orange to gray. All new content, other than that, including the order online form, and a way to contact the restaurant by phone (fake number). The form is not hooked up yet.
+        </p>
+        <!--M1LO13 Demonstrate using 3 types of hyperlinks: site navigation, targeted location using ids, and external (HTML, this item should be specified 3 times, once on each type of link)-->
+        <header>
+                <!--M1LO9 Demonstrate the use of inline images (HTML)-->
+                <!--An image contained within a program-->
+                <!--M2LO4 Demonstrate external, embedded, and inline styles (HTML, this item should be specified 2 times, once each for embedded and inline styles; note external was taken care of with M1LO8; see 2-3b Embedded Style Sheets, and 2-3c Inline Styles)-->
+                <!--This is an inline style-->
+                <nav>
+                        <!--M1LO12 Create navigation using unordered lists (HTML)-->
+                        <!--The <ul> tag is used to create a list of related items in no particular order.-->
+                        <!--M1LO13 Demonstrate using 3 types of hyperlinks: site navigation, targeted location using ids, and external (HTML, this item should be specified 3 times, once on each type of link)-->
+                        <!--This is an example of navigation.-->
+                        <ul>
+                                <li>
+                                        <a href="index.html">Home</a>
+                                </li>
+                                <li>
+                                        <a href="about.html">About</a>
+                                </li>
+                                <li class="dropdown">
+                                        <button class="dropbtn">Menu
+                                                <i class="fa fa-caret-down"></i>
+                                        </button>
+                                        <div class="dropdown-content">
+                                                <a href="pizza_menu.html">Pizza Menu</a>
+                                                <a href="bread_menu.html">Bread Menu</a>
+                                        </div>
+                                </li>
+                                <li><a href="order_online.html">Order Online
+                                                <div class="container">
+                                                        <div class="text-block">
+                                                                <div class="text-block">
+                                                                </div>
+                                                        </div>
+                                                </div>
+                                        </a>
+                                </li>
+                        </ul>
+                </nav>
+        </header>
+        <h4>About Kilroy's Pizza</h4>
+        <section id="leftsection">
+                <!--M1LO13 Demonstrate using 3 types of hyperlinks: site navigation, targeted location using ids, and external (HTML, this item should be specified 3 times, once on each type of link)-->
+                <!--This is an example of external.-->
+                <article>
+                        <p>Welcome to <strong>Kilroy’s Pizza</strong>, located inside Capitol Hill’s hidden gem,
+                                <a href="https://www.curecocktail.com/"><em>Cure Cocktail</em></a>
+                                in the Broadway Building near Pike and Pine. <br /> Kilroy’s Pizzas are
+                                handcrafted with
+                                love and
+                                topped with
+                                imported
+                                cheeses, housemade sauce, locally produced charcuterie, and farm-fresh herbs and
+                                veggies. We
+                                serve our
+                                own
+                                unique take on New York Style, and our distinctive version of a pan pizza. James
+                                Lorimer, a
+                                pizzaiolo
+                                with the
+                                soul of a breadmaker is also baking up some delicious loaves just for you!</p>
+                </article>
+        </section>
+        <aside>
+                <blockquote>
+                        <strong>LOCATION</strong><br />
+                        Inside Cure Cocktail<br />
+                        1641 Nagle Pl<br />
+                        Seattle, WA 98122<br />
+                        <br />
+                        <strong>HOURS</strong><br />
+                        Friday-Sunday<br />
+                        11 AM - 5 PM<br />
+                        <br />
+                        <strong>Happy Monday</strong><br />
+                        11 AM - 10 PM<br />
+                        <br />
+                        info.KilroysPizza@gmail.com
+                </blockquote>
+        </aside>
+        <footer>
+                <!--M1LO10 Demonstrate the use of special characters from extended character sets (HTML, use entities, not cut-and-pasted unicode characters)-->
+                <!--These characters put in a bullet and white space-->
+                Kilroy's Pizza &#8226; 1641 Nagle Place, Seattle WA, &nbsp; 98122 &#8226; phone: 555-555-1234
+        </footer>
+</body>
+
+</html>

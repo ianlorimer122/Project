@@ -1,0 +1,582 @@
+@charset "utf-8";
+@import url(https://fonts.googleapis.com/css?family=Cabin+Sketch:700|Patrick+Hand+SC|Waiting+for+the+Sunrise);
+/*
+CIS 155 Project
+Author: Ian Lorimer
+Date: 05.01.2020
+Filename: styles.css
+*/
+/*
+Main structural styles
+*/
+html{
+    background-color: rgb(0, 0, 0);
+    font-family: 'Tattoo Sailor', sans-serif;
+}
+body{
+	margin-left: auto;
+	margin-right: auto;
+	width: 95%;
+	color: black;
+	background-color: white;
+}
+/*Heading Styles*/
+/*
+M2LO13 Demonstrate how CSS can change presentation of textual elements (CSS, these are styles that impact text that is rendered on the page)
+*/
+header{
+	background-color: black;
+}
+h1{
+	text-indent: 25%;
+	line-height: 0.1em;
+	color: white;
+	background-color: black;
+	text-align: left;
+	font-size: 6em;
+}
+/*
+M2LO15 Apply colors using CSS (CSS, see 2-5 Working with Color in CSS)
+*/
+h2{
+	background-color: black;
+	line-height: 0.1em;
+	text-indent: 50%;
+	color: white;
+	font-size: 6em;
+}
+img{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+}
+/*
+M2LO12 Demonstrate how CSS can change presentation of page elements (CSS, these are styles that impact page elements rather than impacting text on the page)
+*/
+.center{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+}
+.middle{
+	margin: auto;
+}
+/*
+M2LO5 Demonstrate contextual selectors (CSS, specify 2 times, showing two different types of contextual selectors as shown in Figure 2-12, Contextual Selectors, of the textbook)
+*/
+dt{
+	font-size: large;
+}
+/*
+M2LO5 Demonstrate contextual selectors (CSS, specify 2 times, showing two different types of contextual selectors as shown in Figure 2-12, Contextual Selectors, of the textbook)
+*/
+aside blockquote{
+	color: white;
+}
+/*
+M2LO3 Demonstrate style precedence and inheritance in CSS (CSS, this item should be specified 2 times, once where precedence is applied and once where inheritance is applied; see 2-3d Style Specificity and Precedence, and 2-3e Style Inheritance)
+*/
+nav > ul{
+	display: table-row;
+}
+/*
+M2LO3 Demonstrate style precedence and inheritance in CSS (CSS, this item should be specified 2 times, once where precedence is applied and once where inheritance is applied; see 2-3d Style Specificity and Precedence, and 2-3e Style Inheritance)
+*/
+/*
+M4LO5 Demonstrate the use of text or box shadowing (CSS, note one of these two in your CSS and explain its impact on the HTML)
+Crated text shadows
+*/
+nav > ul > li{
+	display: table-cell;
+	text-align: center;
+	background-color: white;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	border: 4px double rgb(0, 0, 0);
+}
+/*
+M2LO7 Demonstrate a CSS attribute selector other than class or id (CSS, specify 1 time, see 2-9b Attribute selectors)
+*/
+[href] {
+	font-size: 20px;
+}
+nav{
+	display: table;
+	width: 100%;
+}
+/*
+M2LO6  Demonstrate a CSS id and a CSS class selector (CSS, specify 2 times, show a use of id and a use of class, see 2-9b Attribute selectors)
+*/
+#leftsection article{
+	float: left;
+	width: 60%;
+	font-size: 22px;
+}
+#rightsection blockquote{
+	font-size: large;
+}
+/*
+M2LO11 Demonstrate a pseudo-classes and a pseudo-element selector (CSS, specify 2 times, show one pseudo-class and one pseudo-element, see 2-18 Using Pseudo-Classes and Pseudo-Elements)
+*/
+article p::first-letter{
+	font-size: 250%;
+}
+/*
+M2LO14 Demonstrate and explain the use of progressive enhancement in CSS (CSS, see 2-6 Employing Progressive Enhancement)
+*/
+/*
+Progressive Enhancement is starting with a good foundation and adding enhancements. Clean code and CSS are the beginning layers. I am trying to add the simple things first and the bells and whistles as we learn them.
+*/
+h3{
+	font-size: 1.9em;
+	color: black;
+	margin-left: 15px;
+	margin-right: 15px;
+}
+/*
+This is the about page
+*/
+h4{
+	font-size: 3em;
+	background-color: white;
+	color: black;
+	background-image: url(IMG_0670_edited.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 100px 100px 300px 100px;
+}
+h5{
+	font-size: 3em;
+	color: black;
+	margin-left: 15px;
+	margin-right: 15px;
+	clear: left;
+}
+h6{
+	background-color: white;
+	color: black;
+	font-size: x-large;
+}
+/*
+M3LO8B Demonstrate relative positioning (It positions the images on the links)
+*/
+.container{
+	position: relative;
+}
+.text-block{
+	bottom: 20px;
+	left: 20px;
+}
+p{
+	background-color: white;
+	color: black;
+	font-size: x-large;
+	text-align: justify;
+}
+/*
+M3LO2 Demonstrate floating elements on the about page. It floats the "about" information to the left, making room for the aside on the right.
+*/
+section{
+	width: 87%;
+	margin: auto;
+	background-color: white;
+	color: black;
+}
+
+/*
+M4LO3 Demonstrate the use of rounded corners for borders (CSS)
+*/
+aside{
+	float: right;
+	width: 35%;
+	margin: 0 1.5%;
+	border: 4px double rgb(45, 93, 62);
+	border-radius: 50px 50px;
+}
+blockquote{
+	text-align: left;
+}
+/*
+M3LO6 Demonstrate formatting a grid (CSS, note the CSS rules that do this and what their impact is on the HTML; this can be old div-class based grids, or new CSS3 grids)
+*/
+.grid-container{
+	display: grid;
+	justify-items: center;
+}
+.item1{
+	grid-column-start: 1;
+	grid-column-end: 1;
+}
+.item2{
+	grid-column-start: 2;
+	grid-column-end: 1;
+}
+.item3{
+	grid-column-start: 3;
+	grid-column-end: 1;
+}
+p2{
+	font-size: medium;
+}
+article{
+	font-size: small;
+}
+#html2{
+	background-color: white;
+	color: black;
+}
+#body2{
+    background-color: white;
+	color: black;
+}
+aside > blockquote{
+	background-color: white;
+	color: black;
+}
+#html3{
+	width: 100%;
+	background-image: url(menu_background.jpg);
+	background-repeat: no-repeat;
+}
+/*
+Menu page styles
+*/
+/*
+M4LO4 Demonstrate the use of gradients (CSS)
+*/
+#body3{
+	box-sizing: border-box;
+	width:100%;
+	background-color: rgba(0,0,0,0);
+}
+/*
+M4LO2 Demonstrate the use of background images (CSS)
+*/
+
+dl{
+	margin-left: 15px;
+	margin-right: 15px;
+}
+figure{
+	float: right;
+	width: 25%;
+	text-align: center;
+	font-size: smaller;
+	text-indent: 0;
+	border: thin black solid;
+	padding: 0.5em;
+	/*
+	M3LO10 Demonstrate an overflow setting (It makes a scroll bar, but right now, there is no info to scroll.
+	*/
+	overflow: scroll;
+  }
+  figure img{
+	  float: right;
+	  display: block;
+	  /*
+	  M3LO11 Demonstrate -prefix- style browser extensions use in CSS (This reflects the image along the y-axis)
+	  */
+	  -webkit-transform: rotateY(180deg);
+	  width: 100%;
+  }
+figcaption{
+	font-size: smaller;
+}
+/*
+M3LO3 Demonstrate a clearing floats (This moves the footer to the left side, instead of lining it up under the aside)
+*/
+footer{
+	width: 100%;
+	clear: left;
+}
+/* Base Styles */
+/* Mobile Styles */
+/*
+M5LO3 Use media queries to format a page differently for phones vs. PCs. (CSS, note where these are in your CSS and describe the overall impact they have on the site)
+Increased size and line height of navbar. Took out the aside, and the pizza menu sliding gallery.
+*/
+@media only screen and (max-width: 480px){
+	img.panel{
+		width: 100%;
+	}
+	nav.horizontal a{
+		font-size: 1.5em;
+		line-height: 2.2em;
+	}
+	aside{
+		display: none;
+	}
+	footer{
+		display: none;
+	}
+	h1{
+		font-size: 1.5em;
+		text-align: center;
+	}
+	h2{
+		font-size: 1.5em;
+		text-align: center;
+	}
+	.grid-container{
+		display: none;
+	}
+	li{
+		font-size: small;
+	}
+	p{
+		text-align: left;
+		width: 100%;
+	}
+}
+/*
+Tablet Styles: 480px or greater
+*/
+@media only screen and (min-width: 481px){
+	nav.horizontal a{
+		font-size: 3em;
+		line-height: 5em;
+	}
+}
+/*
+Desktop Styles: 759px or greater
+*/
+/*
+M5LO3 Use media queries to format a page differently for phones vs. PCs. (CSS, note where these are in your CSS and describe the overall impact they have on the site)
+Repeated background to fill to cover. Enlarged font sizes on pizza menu. Added margins to images on bread menu.
+*/
+@media only screen and (min-width: 766px){
+	#html3{
+		background-repeat: repeat-x;
+	}
+	dt{
+		font-size: xx-large;
+	}
+	dd{
+		font-size: x-large;
+	}
+}
+.navbar a{
+	float: left;
+	color: white;
+	text-align: center;
+}
+/*
+M5LO4 Use CSS for pull-down menus (or collapsible/expandable areas) (CSS, note where the menu is on your site and how it behaves)
+Drop down menu on about page menu drops down to pizza menu and bread menu.
+*/
+.dropdown {
+	overflow: hidden;
+}
+  /* Dropdown button */
+.dropdown .dropbtn{
+	border: none;
+	outline: none;
+	color: black;
+	background-color: white;
+	font-family: inherit; /* Important for vertical align on mobile phones */
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	font-size: 1.3em;
+  }
+  
+  /* Add a red background color to navbar links on hover */
+  .navbar a:hover, .dropdown:hover .dropbtn {
+	background-color:white;
+  }
+  
+  /* Dropdown content (hidden by default) */
+  .dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: white;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+	float: none;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	text-align: left;
+  }
+  
+  /* Add a grey background color to dropdown links on hover */
+  .dropdown-content a:hover {
+	background-color: #ddd;
+  }
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+	display: block;
+}
+/*
+M5LO7 Demonstrate use of properties of flexbox containers (CSS, document what flexbox container properties you use and their impacts, for one CSS selector using them)
+Display flex enables the flex content for all its direct children. 
+This defines a flex container for all the flex children
+*/
+/*
+M5LO5 Demonstrate the use of flexboxes on a web page (CSS document where you use flexboxes; explain their impact on the page's layout; this can be a new page or a redo of an existing page)
+This demonstrates a slider using flexbox
+*/
+#section2{
+	box-sizing: border-box;
+	position: absolute;
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	border: 2px solid #000;
+	background-repeat: no-repeat;
+}
+/*
+M8LO10 Demonstrate a CSS animation or transition (CSS, identify which is being done and its impact on the rendered HTML; note it has to include a time aspect, not be immediate)
+This has a transition with a 0.5 second ease-in-out. This lets the whole image show before the description pops up.
+*/
+#section2 .slide{
+	position: relative;
+	height: 100%;
+	flex: 1;
+	border-left: 2px solid #000;
+	border-right: 2px solid #000;
+	overflow: hidden;
+	transition: 0.5s ease-in-out;
+}
+/*
+M5LO6 Demonstrate use of properties of flexbox items (CSS, document what flexbox item properties you use and their impacts, for one CSS selector using them)
+Flex grow expands the image, taking up 5 times as much space as the others.
+*/
+#section2 .slide:hover{
+	flex-grow: 5;
+}
+#section2 .slide:last-child{
+	border-right: none;
+}
+#section2 .slide .content{
+	position: absolute;
+	bottom: 0;
+	margin: 40px;
+	padding: 30px;
+	background: white;
+	color: black;
+	visibility: hidden;
+	opacity: 0;
+	transition: 0.5s;
+	transform: translateY(100px);
+}
+#section2 .slide:hover .content{
+	visibility: visible;
+	opacity: 1;
+	transition: 0.5s;
+	transition-delay: 0.5s;
+	transform: translateY(0);
+}
+.slide:nth-child(1){
+	background: url("IMG_0714a.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+.slide:nth-child(2){
+	background: url("IMG_0772.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+.slide:nth-child(3){
+	background: url("IMG_0755b.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+.slide:nth-child(4){
+	background: url("IMG_0702.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+.slide:nth-child(5){
+	background: url("IMG_0717.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+/* Table Styles */
+main{
+	margin: auto;
+	display: flex;
+	justify-content: center;
+	bottom: 0;
+	left: 0;
+}
+/*
+M6LO7 Demonstrate how to format a table with CSS (CSS, group your table styles together and note the overall impact they have on the HTML)
+This adds color, aligns the text, and makes it eaiser to read by alternating line color
+*/
+#table2{
+	float: left;
+	width: 25%;
+}
+#body4{
+	background-color: white;
+}
+#html4{
+	background-color: rgb(100, 100, 100);
+}
+#h7{
+	background-color: white;
+	font-size: xx-large;
+	text-align: center;
+}
+#html5{
+	background-color: white;
+}
+#article2{
+	font-size: xx-large;
+}
+.column{
+	float: left;
+	width: 33.33%;
+}
+.row::after{
+	content: "";
+	clear: both;
+	display: table;
+}
+#img2{
+	width: 25%;
+	float: right;
+}
+#caption2{
+	font-size: x-large;
+}
+#img3{
+	float: left;
+	width: 25%;
+
+}
+/*
+M7LO11 Demonstrate how to format a form with CSS (group your form styles together in your CSS file, and document their overall impact on the form)
+The CSS helps us create a form within a table with shaded cells so your eye can follow the row.
+The submit button was made extra large so people can see it. The caption text size was made bigger for impact.
+*/
+table{
+	margin: auto;
+	max-width: 75%;
+}
+tr:nth-child(odd){
+	background-color: lightgray;
+}
+th{
+	background-color: gray;
+}
+th, td{
+	text-align: left;
+	padding: 0.5em 1em;
+}
+caption{
+	font-size: xx-large;
+}
+#button2{
+	width: 20em;
+	height: 4em;
+	background-color: black;
+	color: white;
+	font-size: large;
+}
